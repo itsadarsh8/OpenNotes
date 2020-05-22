@@ -9,12 +9,12 @@ public class Notes {
     @PrimaryKey(autoGenerate = true)
     private int id;
     private String title;
-    private String discription;
+    private String description;
     private int priority;
 
-    public Notes(String title, String discription, int priority) {
+    public Notes(String title, String description, int priority) {
         this.title = title;
-        this.discription = discription;
+        this.description = description;
         this.priority = priority;
     }
 
@@ -30,8 +30,8 @@ public class Notes {
         return title;
     }
 
-    public String getDiscription() {
-        return discription;
+    public String getDescription() {
+        return description;
     }
 
     public int getPriority() {
